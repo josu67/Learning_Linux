@@ -13,14 +13,11 @@
 **Command-Line :** Interface for typing commands
 
 ---
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-**Note:- Shell and Terminal are not the same.**                                                                                                                     |
-                                                                                                                                                                    |
+**Note:- Shell and Terminal are not the same.**                                                                                                                     
+                                                                                                                                                                  
+- Terminal(The Window) - The visual window or program on ur screen where u type; captures your keystrokes and displays the text.                                      
+                                                                                                                                                                    
+- Shell(The Interpreter) - Underlying program running inside the terminal. It reads the commands you type, translates them for the OS kernel and executes them. 
 
-Terminal(The Window) - The visual window or program on ur screen where u type; captures your keystrokes and displays the text.                                      |
-                                                                                                                                                                    |
-
-Shell(The Interpreter) - Underlying program running inside the terminal. It reads the commands you type, translates them for the OS kernel and executes them. 
-
-Command Line(The Interface) - The actual text-mode interface where the cursor blinks, waiting for u to type a command.
+- Command Line(The Interface) - The actual text-mode interface where the cursor blinks, waiting for u to type a command.
 
