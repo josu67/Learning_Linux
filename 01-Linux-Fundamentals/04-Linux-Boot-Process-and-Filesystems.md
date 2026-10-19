@@ -25,7 +25,17 @@ Power ON → BIOS/UEFI → Bootloader (GRUB) → Kernel → Initramfs → Root F
 
 ---
 
-## 2. Init System and systemd
+## 2. Initramfs and Root Filesystem
+
+- **Initramfs:** A temporary filesystem loaded into RAM during boot. It contains essential programs, device drivers, and tools needed to access and mount the actual root filesystem.
+- **Device Detection:** Tools such as `udev` help identify devices and manage device nodes; required drivers may be loaded to enable hardware access.
+- **Root Filesystem:** Once located, it is checked and mounted at the appropriate mount point in the filesystem hierarchy.
+- **Switching to the Real Root:** The boot process switches from initramfs to the actual root filesystem, and the system's init process (usually `systemd` on Ubuntu) starts.
+- **Important:** Drivers required to access the storage containing the root filesystem must be available during early boot, including in the initramfs when necessary.
+
+---
+
+## 3. Init System and systemd
 
 - **Init system:** The first userspace process started by the kernel. It manages system startup.
 - **systemd:** The init system used by Ubuntu that starts and manages services, handles dependencies, and supports system shutdown.
@@ -34,7 +44,7 @@ Power ON → BIOS/UEFI → Bootloader (GRUB) → Kernel → Initramfs → Root F
 
 ---
 
-## 3. Linux Filesystem Basics
+## 4. Linux Filesystem Basics
 
 A filesystem defines how data is stored, organized, and accessed on a storage device.
 
@@ -48,7 +58,7 @@ Linux supports conventional, flash-storage, network, virtual, and special-purpos
 
 ---
 
-## 4. Partitions vs. Filesystems
+## 5. Partitions vs. Filesystems
 
 - **Partition:** A logical division of a storage device.
 - **Filesystem:** The structure used to organize files and directories within storage.
@@ -59,7 +69,7 @@ Linux supports conventional, flash-storage, network, virtual, and special-purpos
 
 ---
 
-## 5. Linux Directory Structure
+## 6. Linux Directory Structure
 
 Linux organizes files in a single directory hierarchy beginning at `/`, called the root directory.
 
@@ -84,7 +94,7 @@ Unlike Windows, Linux does not normally organize files using separate drive lett
 
 ---
 
-## 6. Filesystem Hierarchy Standard (FHS)
+## 7. Filesystem Hierarchy Standard (FHS)
 
 The Filesystem Hierarchy Standard (FHS) describes the conventional organization and purpose of directories in Linux.
 
@@ -92,7 +102,7 @@ It helps maintain consistency across Linux distributions, making system files, c
 
 ---
 
-## 7. Symbolic Links
+## 8. Symbolic Links
 
 A symbolic link (symlink) is a special file that points to another file or directory.
 
