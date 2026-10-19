@@ -110,7 +110,7 @@ It acts like a shortcut, allowing the same destination to be accessed through an
 
 ---
 
-## Key Takeaways
+## Summary
 
 - The boot process takes Linux from power-on to a usable system.
 - GRUB loads the kernel; the kernel initializes the system.
