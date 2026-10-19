@@ -84,31 +84,6 @@ from power-on until the operating system is ready to use.
 - The system starts necessary services and prepares the operating environment.
 - The login screen eventually becomes available.
 
-### Boot Sequence: Traditional BIOS System
-
-Power ON
-    ↓
-BIOS
-    ↓
-POST
-    ↓
-Bootable device and initial boot code
-    ↓
-GRUB bootloader
-    ↓
-Linux kernel
-    ↓
-Initramfs (if used)
-    ↓
-Root filesystem
-    ↓
-Init system (systemd on Ubuntu)
-    ↓
-Services and login screen
-
-Note: This is a simplified BIOS boot sequence.
-UEFI systems use a different firmware boot mechanism and
-commonly launch a bootloader from the EFI System Partition.
 
 ### Key Takeaways
 
