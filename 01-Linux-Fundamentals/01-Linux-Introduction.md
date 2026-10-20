@@ -23,9 +23,9 @@
 
 ## Command for hecking disk space in Linux
 
-- ` ```bash ` 
-- `df -Th /` 
-- ` ``` ` 
+```bash
+dh -Th
+```
 
 - **df :** disk free. Displays amount of available and used disk space on ur file systems.
 
