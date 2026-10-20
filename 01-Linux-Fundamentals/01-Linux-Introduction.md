@@ -24,9 +24,9 @@
 ## Checking disk space in Linux
 
 ###Command 
-''' bash
+``` bash
 df -Th /
-'''
+```
 df - disk free. Displays amount of available and used disk space on ur file systems.
 
 -T - Type of filesystem (eg ext4, vfat)
