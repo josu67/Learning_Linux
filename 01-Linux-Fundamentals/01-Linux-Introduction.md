@@ -21,3 +21,15 @@
 
 - Command Line(The Interface) - The actual text-mode interface where the cursor blinks, waiting for u to type a command.
 
+## Checking disk space in Linux
+
+###Command 
+''' bash
+df -Th /
+'''
+df - disk free. Displays amount of available and used disk space on ur file systems.
+
+-T - Type of filesystem (eg ext4, vfat)
+h - To print out result in GB/MB(human readable format)
+
+
