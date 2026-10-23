@@ -119,3 +119,21 @@ It acts like a shortcut, allowing the same destination to be accessed through an
 - A partition is a storage division; a filesystem organizes data.
 - Linux uses one unified directory hierarchy starting at `/`.
 - FHS defines the conventional purposes of Linux directories.
+
+## Graphical Login and Desktop Environment
+
+After the system starts, Linux can provide a graphical interface for users to log in and interact with applications.
+
+- **Display Manager:** Provides the graphical login screen, authenticates users through the system's authentication mechanisms, and starts their graphical sessions. Examples: GDM, SDDM.
+- **Display Server / Protocol:** Provides the infrastructure for displaying application windows. Xorg implements X11; Wayland is a newer alternative.
+- **Desktop Environment (DE):** Provides the complete graphical desktop experience, including panels, menus, icons, settings, and applications. Examples: GNOME and KDE Plasma.
+- **Window Manager / Compositor:** Manages application windows, their positions, and visual presentation.
+- **Desktop Utilities:** Provide additional tools such as file managers, settings applications, and application launchers.
+
+**Example:** Ubuntu commonly uses GNOME as its desktop environment and GDM as its display manager.
+
+**Typical sequence:**
+
+System Startup → Essential Services → Graphical Login (Display Manager) → User Login → Desktop Environment → Applications
+
+*Note: The exact sequence varies by system. A Linux system can also run without a graphical desktop, using only a command-line interface.*
