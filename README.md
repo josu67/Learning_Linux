@@ -8,6 +8,7 @@ I am building these notes as I learn, focusing on understanding
 Linux commands, filesystem navigation, and operating system internals.
 
 # Topics Covered
+- Linux - Architecture and Boot Processes
 - Linux Commands
 - File and Directory Management
 - Linux Permissions
